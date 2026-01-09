@@ -12,3 +12,13 @@ class Product(Base):
     price = Column(Float)
     image = Column(String(225))
     stock = Column(Integer)
+
+
+class User(Base):
+    __tablename__ = "Users"
+    id = Column(Integer, primary_key=True)
+    firstName = Column(String(100))
+    lastName = Column(String(100))
+    username = Column(String(100), unique=True)
+    password = Column(String(255))
+    role = Column(String(100))
