@@ -6,7 +6,7 @@ from typing import Optional
 
 pwd_context = CryptContext(schemes=["bcrypt"],
                            deprecated="auto",
-                           bycrypt__rounds=12)
+                           bcrypt__rounds=12)
 
 
 def hash_password(password: str):

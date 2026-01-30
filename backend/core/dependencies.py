@@ -1,9 +1,9 @@
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from auth import decode_access_token
-from db import SessionLocal
-from models import User
+from backend.core.auth import decode_access_token
+from backend.db import SessionLocal
+from backend.models import User
 
 # Now these dependencies can be used in route definitions to enforce authentication and authorization.
 

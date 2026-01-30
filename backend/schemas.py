@@ -38,3 +38,15 @@ class ProductOut(ProductCreate):
 
     class Config:
         from_attributes = True
+
+
+class UserOut(BaseModel):
+    id: int
+    firstName: str
+    lastName: str
+    username: str
+    role: str
+    wallet_balance: float = 0 
+
+    class Config:
+        from_attributes = True
